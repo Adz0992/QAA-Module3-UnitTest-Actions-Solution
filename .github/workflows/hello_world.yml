@@ -1,7 +1,9 @@
 name: Hello World
 
 on: 
-  #When the code is pushed to the repo
+  #enables manual trigger
+  workflow_dispatch: 
+   #When the code is pushed to the rep
   push:
   #When the code is pulled to the repo
   pull_request: 
@@ -11,4 +13,3 @@ jobs:
     steps:
       - name: print out Hello World
         run: echo 'Hello World'
-    
